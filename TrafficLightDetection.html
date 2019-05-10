@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Will Gale</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Will Gale</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Traffic Light Detection</h1>
+							<span class="image fit"><img src="images/TLD_2.gif" alt="" /></span>
+							<p>This project takes the output of the YOLO object detection, 
+								which only detects if a traffic light is present, and classifies 
+								weather it is red, yellow or green. The aim of the project was to 
+								integrate it with the self driving car to give it more information 
+								about the world.
+								</p>
+							<p>To obtain training data, YOLO object detection was used to gather 
+								images of traffic lights, then each image was classified using a 
+								color picker. Any inaccuracies with the colour picking were discarded 
+								by hand. The remaining images were used to train a convolutional 
+								neural network to classify  the traffic light. </p>
+
+								<p>In practice, only the traffic light that is closest to the 
+									horizontal center is used as this should be the traffic 
+									light in our lane.</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
