@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Will Gale</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Will Gale</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Overwatch Aimbot</h1>
+							<span class="image fit"><img src="images/OverwatchAI_3.gif" alt="" /></span>
+							<p>This project utilized object detection to create an aimbot for overwatch.
+								First the Yolo V2 algorithm was trained to detect the bots. Pretrained weights
+								were used to speed up training/accuracy due to low amounts of labeled data
+								of the bots.
+								</p>
+							<p>
+								Once the algorithm has been trained, it is used to determine the positions 
+								of bots on screen and the bot closest to the center is deemed the target
+								denoted with a red circle inside the green detection box. The direction vector
+								is calculated, which is then used to move the joystick to the desired location.
+							</p>
+							<p>
+								A lot of limitations arise with this aimbot. First, it can only run at frame
+								rates upto about 20 fps. This is becuase the game is running at 75fps and the
+								neural network can only use the remaining GPU memory. Furthermore, the joystick
+								emulation does not allow very small movements, so the joystick often overshoots.
+							</p>
+
+							<span class="image fit"><img src="images/OverwatchAI_1.gif" alt="" /></span>
+							<span class="image fit"><img src="images/OverwatchAI_2.gif" alt="" /></span>
+							<span class="image fit"><img src="images/OverwatchAI_4.gif" alt="" /></span>
+							
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
