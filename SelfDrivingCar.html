@@ -31,26 +31,29 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">GTA5 Self Driving Car</h1>
-							<span class="image fit"><img src="images/LONG_DISTANCE_1.gif" alt="" /></span>
+							<span class="image fit"><img src="images/Driving_Unfamiliar_roads.gif" alt="" /></span>
 							<p>This project was heavily inspired by Harrison Kinsley's project: 
 								<a href="https://github.com/Sentdex/pygta5">https://github.com/Sentdex/pygta5</a>
 								</p>
 							<p>This model was trained using the behavioural cloning technique.
-								Approximately 100,000 images were collected along with the 
+								Approximately 80,000 images were collected along with the 
 								corresponding steering angles and throttle positions. This 
 								training data was then given to the model to learn how to drive.
 								</p>
-							<p>A modified version of PilotNet was used for the model, with the only 
-								difference being that there was three regression heads instead of one, 
-								one for the steering angle and one for the throttle (and a final one for braking, 
-								but there wasn't enough training data for this to work).</p>
-							<p>Overall the model mainly learns to steer, the throttle control is less reliant. 
+							<p>A modified version of PilotNet was used for the model, with one main 
+								difference being that there was two regression heads instead of one, 
+								one for the steering angle and one for the throttle.</p>
+							<p>Overall the model mainly learns to steer, and maintain speed at about 45mph. 
 								With more data the model could possible generalise further. However, with the 
 								addition of depth perception, optical flow estimation and scene segmentation 
 								this could help the model learn better representations with similar amounts of 
 								training data.
-
 							</p>	
+
+							<p>For even more information about this project, visit the GitHub page
+								<a href="https://github.com/Will-J-Gale/GTA5-Self-Driving-Car">https://github.com/Will-J-Gale/GTA5-Self-Driving-Car</a>
+								</p>
+
 						</div>
 					</section>
 
