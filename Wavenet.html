@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Will Gale</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Will Gale</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Wavenet Pytorch</h1>
+							<span class="image fit"><img src="images/wavenet.png" alt="" /><i>Diagram from the wavenet paper</i></span>
+							<p>
+                                Inspired by the following:
+                                <ul>
+                                    <li><a href="https://arxiv.org/abs/1609.03499">Wavenet</a></li>
+                                    <li><a href="https://www.mdpi.com/2076-3417/10/3/766">Real-Time Guitar Amplifier Emulation with Deep Learning</a></li>
+                                    <li><a href="https://github.com/sdatkinson/neural-amp-modelerhttps://arxiv.org/abs/1609.03499">Neural Amp Modeller</a></li>
+                                </ul>
+							</p>
+
+                            <p>
+                                This project aimed to extend the neural-amp-modeller to model the whole guitar signal chain (gate, drive, amp, cab, EQ) instead of just the amplifier and also focusing on high gain amps. 
+                                Moreover it aimed to create a simple to understand pytorch version, as often commercial versions are highly abstracted and difficult to
+                                extract the actual architecutre of the model used. Similarly to the neural-amp-modeller a simple convnet architecutre was also tried for comparison. 
+                            </p>
+                            <p>
+                                All code can be found at <a href=https://github.com/Will-J-Gale/wavenet-pytorch> Wavenet-Pytorch</a>
+                            </p>
+                            <h1>
+                                Audio examples
+                            </h1>
+                            <h2>
+                                Input DI
+                            </h2>
+                            <audio controls="controls">
+                                <source src="https://github.com/Will-J-Gale/wavenet-pytorch/blob/master/audio/validation_DI.wav"></source>
+                            </audio>
+                            <br><br>
+                            <h2>
+                                Model output
+                            </h2>
+                            
+                            <p><h3>Wavenet High Gain</h3><audio controls><source src="https://github.com/Will-J-Gale/wavenet-pytorch/blob/master/audio/model_output/wavenet_high_gain.wav"></source> </audio></p>
+                            <p><h3>Wavenet Mid Gain</h3><audio controls><source src="https://github.com/Will-J-Gale/wavenet-pytorch/blob/master/audio/model_output/wavenet_mid_gain.wav"></source></audio></p>
+                            <p><h3>Convnet High Gain</h3><audio controls><source src="https://github.com/Will-J-Gale/wavenet-pytorch/blob/master/audio/model_output/wavenet_mid_gain.wav"><source></audio></p>
+
+                            <p>More audio from experiments can be found <a href="https://github.com/Will-J-Gale/wavenet-pytorch/tree/master/audio/model_output/experiments">here</a></p>
+						</div>
+
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
